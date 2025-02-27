@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Employee List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee List</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Date of Birth</th>
+                    <th>Age</th>
+                    <th>Salary</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="employee : ${employees}">
+                    <td th:text="${employee.id}">ID</td>
+                    <td th:text="${employee.name}">Name</td>
+                    <td th:text="${employee.email}">Email</td>
+                    <td th:text="${employee.dob}">Date of Birth</td>
+                    <td th:text="${employee.age}">Age</td>
+                    <td th:text="${employee.salary}">Salary</td>
+                    <td th:text="${employee.status}">Status</td>
+                    <td>
+                        <a th:href="@{/edit/{id}(id=${employee.id})}">Edit</a>
+                        <a th:href="@{/delete/{id}(id=${employee.id})}">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <a th:href="@{/add}">Add New Employee</a>
+        </p>
+    </div>
+</body>
+</html>
