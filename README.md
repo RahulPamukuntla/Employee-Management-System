@@ -13,7 +13,7 @@ Technologies Used:
 - MySQL 8.0.28
 
 Getting Started:
-1. Clone the repository: git clone https://github.com/RahulPamukuntla/EmployeeManagementSystem.git
+1. Clone the repository: git clone https://github.com/RahulPamukuntla/Employee-Management-System.git
 2. Build the project: mvn clean package
 3. Run the application: java -jar target/EmployeeManagementSystem-0.0.1-SNAPSHOT.jar
 4. Access the application: http://localhost:8080
