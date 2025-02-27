@@ -2,29 +2,29 @@ Employee Management System
 
 A simple employee management system built with Spring Boot, Thymeleaf, and MySQL.
 
-Features
+Features:
 - Employee listing with pagination
 - Employee creation, editing, and deletion
 - Validation for employee data
 
-Technologies Used
+Technologies Used:
 - Spring Boot 3.4.3
 - Thymeleaf 3.1.0
 - MySQL 8.0.28
 
-Getting Started
+Getting Started:
 1. Clone the repository: git clone https://github.com/your-username/EmployeeManagementSystem.git
 2. Build the project: mvn clean package
 3. Run the application: java -jar target/EmployeeManagementSystem-0.0.1-SNAPSHOT.jar
 4. Access the application: http://localhost:8080
 
-License
+License:
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Contact
-Your Name - [your email address](mailto:your email address) - https://github.com/your-username
+Contact:
+Rahul Pamukuntla - rahulpamukuntla@gmail.com
 
-Contributing
+Contributing:
 Contributions are welcome! Feel free to submit pull requests or issues.
 
 Acknowledgments
